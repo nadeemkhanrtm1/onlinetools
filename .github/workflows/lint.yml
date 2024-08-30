@@ -34,6 +34,15 @@ jobs:
       - name: 🔍 List Files
         run: ls -la /home/runner/work/onlinetools/onlinetools/
 
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # Fetch all history and files
+
+      - name: 📥 Download deps
+        run: pnpm install --frozen-lockfile
+
+          
       - name: 📥 Download deps
         run: pnpm install --frozen-lockfile
 
