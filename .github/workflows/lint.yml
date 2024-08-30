@@ -16,7 +16,7 @@ jobs:
     steps:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v2
-        
+
       # Install pnpm
       - name: Install pnpm
         run: npm install -g pnpm
@@ -31,6 +31,8 @@ jobs:
         with:
           node-version: 20
           cache: 'pnpm'
+      - name: 🔍 List Files
+        run: ls -la /home/runner/work/onlinetools/onlinetools/
 
       - name: 📥 Download deps
         run: pnpm install --frozen-lockfile
