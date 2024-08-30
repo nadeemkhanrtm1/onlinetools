@@ -16,6 +16,10 @@ jobs:
     steps:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v2
+        
+      # Install pnpm
+      - name: Install pnpm
+        run: npm install -g pnpm
 
       - name: 🤌 Setup pnpm
         uses: pnpm/action-setup@v2
