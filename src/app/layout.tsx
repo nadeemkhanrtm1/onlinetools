@@ -3,6 +3,9 @@ import * as React from 'react';
 
 import '@/styles/globals.css';
 import '@/styles/colors.css';
+import '@/styles/flip-clock.css';
+
+import ClockScript from '@/components/script/clock';
 
 import { siteConfig } from '@/constant/config';
 
@@ -52,6 +55,9 @@ export default function RootLayout({
 }) {
   return (
     <html>
+      <head>
+        <ClockScript />
+      </head>
       <body>{children}</body>
     </html>
   );
