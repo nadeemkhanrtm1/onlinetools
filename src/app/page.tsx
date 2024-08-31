@@ -12,9 +12,5 @@ import '@/lib/env';
  */
 
 export default function HomePage() {
-  return (
-    <main>
-      <section className='bg-white'></section>
-    </main>
-  );
+  return <main></main>;
 }
