@@ -1,21 +1,10 @@
-/* FlipClock.css */
-html {
-  height: 100%;
-}
-
-body {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #eee;
-}
-
 .flip-clock {
   text-align: center;
   perspective: 400px;
-  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 56px);
 }
 
 .flip-clock__piece {

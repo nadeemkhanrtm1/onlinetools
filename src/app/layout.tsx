@@ -5,7 +5,10 @@ import '@/styles/globals.css';
 import '@/styles/colors.css';
 import '@/styles/flip-clock.css';
 
+import { SiteFooter } from '@/components/footer/site-footer';
+import SiteHeader from '@/components/header/site-header';
 import ClockScript from '@/components/script/clock';
+import GoogleAnalytics from '@/components/script/google-analytics';
 
 import { siteConfig } from '@/constant/config';
 
@@ -57,8 +60,13 @@ export default function RootLayout({
     <html>
       <head>
         <ClockScript />
+        <GoogleAnalytics />
       </head>
-      <body>{children}</body>
+      <body>
+        <SiteHeader />
+        {children}
+        <SiteFooter />
+      </body>
     </html>
   );
 }
