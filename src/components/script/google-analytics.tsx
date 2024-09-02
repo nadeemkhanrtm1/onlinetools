@@ -1,9 +1,7 @@
-// GoogleAnalytics.tsx
-
 import Script from 'next/script';
 import React from 'react';
 
-const NEXT_PUBLIC_MEASUREMENT_ID = 'H01R9MBE3X';
+const NEXT_PUBLIC_MEASUREMENT_ID = 'G-H01R9MBE3X';
 
 const GoogleAnalytics = () => {
   return (
